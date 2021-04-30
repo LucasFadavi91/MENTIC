@@ -1,0 +1,26 @@
+/*#bs-example-navbar-collapse-1 a.active {
+    background-color: dodgerblue;
+    color: white;
+}*/
+
+#bs-example-navbar-collapse-1 a:hover {
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+}
+
+.level {
+    border: 1px solid royalblue;
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    background-color: royalblue;
+}
+
+.level>h4 {
+    margin-top: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
