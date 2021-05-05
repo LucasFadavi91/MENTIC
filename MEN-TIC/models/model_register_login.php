@@ -29,7 +29,7 @@ function altaUser($firstname, $lastname, $email, $password) {
 	
 	global $conexion;
 
-	$id_user = "MD00".getID();
+	$id_user = getID();
 	$from_date = getFecha();
 	$to_date = NULL;
 	$admin = "N";
@@ -65,10 +65,32 @@ function getID(){
     global $conexion;
 
 		try {
-			$select = $conexion->prepare("SELECT MAX(id_user) + 1 AS 'id_user' FROM users");
+			$select = $conexion->prepare("SELECT MAX(id_user) AS 'id_user' FROM users");
 			$select->execute();
 
-			return $select->fetch(PDO::FETCH_ASSOC)["id_user"];
+    		foreach($select->fetchAll() as $row) {
+        	$num=$row['id_user'];
+        	//var_dump($row);
+    		}
+
+			/*En la variable num sacamos 'D00X', el id del user */
+            //echo "Esto es num: ".$num . "<br>";
+            //var_dump($num) . "<br>";
+
+		    /*Con ltrim quitamos la D del codigo que hemos obtenido de la database*/
+		    $num= ltrim($num, "U");
+		            //echo $num . "<br>";
+		    /*Con intval pasamos el string a numero para poder sumarle un 1 después*/
+		    $num= intval($num);
+		            //echo $num . "<br>";
+		    $num=$num+1;
+		   
+		    //con lo siguiente añadimos los ceros y la D delante del codigo
+		    $num = str_pad($num,3,"0",STR_PAD_LEFT);
+		    $num = str_pad($num,4,"U",STR_PAD_LEFT);
+
+			return $num;
+
 		} catch (PDOException $ex) {
 			return -1;
 		}
