@@ -39,8 +39,8 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Historias <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Aprender</a></li>
+                            <li><a href="#">Aprender <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Historias</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Más <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -61,7 +61,7 @@
                                     <?php echo htmlspecialchars($_SESSION["id_user"]) ?>
                                 </a>
                             </li>
-                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Mis Puntos</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuenta <span class="caret"></span></a>
                                 <ul class="dropdown-menu">

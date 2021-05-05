@@ -7,7 +7,8 @@ if (!isset($_POST) || empty($_POST)) {
 
     require_once("../views/login.php");
 
-    }else if(!isset($_POST['submit']) == "logear"){
+
+    }else if(isset($_POST['logear']) && !isset($_POST['register'])){
 
         $email = $_POST["email"];
         $password = $_POST["password"];
@@ -17,26 +18,34 @@ if (!isset($_POST) || empty($_POST)) {
         if ($id_user != null) {
             
             crearSesionLogin($id_user);
-
-    
         }
+
         header('location: ../controllers/controller_menu-principal.php');
 
-    }else if(!isset($_POST['submit']) == "register"){
+
+    }else if(isset($_POST['register']) && !isset($_POST['logear'])){
 
         $firstname = $_POST['firstname'];
         $lastname  = $_POST['lastname'];
         $email     = $_POST['email'];
-        $password     = $_POST['password'];
+        $password  = $_POST['password'];
 
 
         //Damos de alta un nuevo user en la bbdd
         $nuevoUser = altaUser($firstname, $lastname, $email, $password);
 
-        echo "Nuevo usuario dado de alta";
+        $id_user = comprobarCredenciales($email, $password);
 
-    
-}/*Hay que tratar el tema de la recuperacion de sesion en caso de que ya haya una.
+        if ($id_user != null) {
+            
+            crearSesionLogin($id_user);
+        }
+
+        //echo "Nuevo usuario dado de alta";
+        header('location: ../controllers/controller_menu-principal.php'); 
+}
+
+/*Hay que tratar el tema de la recuperacion de sesion en caso de que ya haya una.
 
  else {
 
