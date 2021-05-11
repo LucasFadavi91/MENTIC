@@ -1,4 +1,5 @@
 <?php 
+
   session_start();
 
 	if (isset($_SESSION) && isset($_SESSION["id_user"]) === false) {
@@ -87,16 +88,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div>
+                        <div>   
                             <div class="level">
-                                <h4>Level 1</h4>
+                                <a href="../views/prueba1/index.html">Level 1</a> 
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div>
                             <div class="level">
-                                <h4>Level 2</h4>
+                            Level 2
                             </div>
                         </div>
                     </div>
@@ -106,14 +107,14 @@
                     <div class="col-sm-6">
                         <div>
                             <div class="level">
-                                <h4>Level 3</h4>
+                            Level 3
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div>
                             <div class="level">
-                                <h4>Level 4</h4>
+                            Level 4
                             </div>
                         </div>
                     </div>

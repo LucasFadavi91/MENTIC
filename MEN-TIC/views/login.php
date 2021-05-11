@@ -100,8 +100,9 @@
                                             <p class="text-center"><a href="#" id="signin">¿Ya tienes cuenta?</a></p>
                                         </div>
                                     </div>
+                                    <!-- La siguiente etiqueta estaba mal cerrada, estaba en la linea 105-->
+                                </form>
                             </div>
-                            </form>
                         </div>
                     </div>
                 </div>
