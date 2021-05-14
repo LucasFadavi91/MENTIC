@@ -31,7 +31,7 @@
                                 <br>
                             </div>
                             <div>
-                                <input style="background-color: yellowgreen;" type="button" value="Comienza" onclick="window.location.href='./../controllers/controller_register_login.php'" class="btn btn-block mybtn btn-primary tx-tfm">
+                                <input style="background-color: orange;" type="button" value="Comienza" onclick="window.location.href='./../controllers/controller_register_login.php'" class="btn btn-block mybtn btn-primary tx-tfm">
                                 <input type="button" value="Ya tengo cuenta" onclick="window.location.href='./../controllers/controller_register_login.php'" class="btn btn-block mybtn btn-primary tx-tfm">
                             </div>
                         </div>

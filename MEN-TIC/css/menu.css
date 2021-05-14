@@ -1,26 +1,37 @@
 /*#bs-example-navbar-collapse-1 a.active {
     background-color: dodgerblue;
     color: white;
-}*/
+}
 
 #bs-example-navbar-collapse-1 a:hover {
-    background-color: royalblue;
+    background-color: #008cff;
     color: white;
     border-radius: 10px;
 }
-
+*/
 .level {
-    border: 1px solid royalblue;
-    border-radius: 80px;
-    width: 80px;
-    height: 80px;
-    background-color: royalblue;
-}
+    border: 5px solid #0264b4;
+    border-radius: 180px;
+    width: 180px;
+    height: 180px;
+    background-color: #008cff;
+    color: whitesmoke;
 
-.level>h4 {
-    margin-top: 25px;
+    font-size: x-large;
     text-align: center;
     vertical-align: middle;
-    margin-bottom: 20px;
+    line-height: 170px;
     font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.level a{
+    color: whitesmoke;
+}
+
+.level a:hover {
+    color: deeppink;
+    text-decoration: none;
+
 }

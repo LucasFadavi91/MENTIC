@@ -16,6 +16,8 @@ if (!isset($_POST) || empty($_POST)) {
         $id_user = comprobarCredenciales($email, $password);
 
         if ($id_user != null) {
+
+            session_start();
             
             crearSesionLogin($id_user);
         }
@@ -35,14 +37,17 @@ if (!isset($_POST) || empty($_POST)) {
         $nuevoUser = altaUser($firstname, $lastname, $email, $password);
 
         $id_user = comprobarCredenciales($email, $password);
+        
 
         if ($id_user != null) {
-            
+
+            session_start();
+
             crearSesionLogin($id_user);
         }
 
         //echo "Nuevo usuario dado de alta";
-        header('location: ../controllers/controller_menu-principal.php'); 
+        header('location: ../controllers/controller_menu-principal2.php'); 
 }
 
 /*Hay que tratar el tema de la recuperacion de sesion en caso de que ya haya una.

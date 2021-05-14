@@ -1,6 +1,3 @@
-/*$( document ).ready(function() {
-    console.log( "ready!" );
-});*/
 $("#signup").click(function() {
     $("#first").fadeOut("fast", function() {
         $("#second").fadeIn("fast");

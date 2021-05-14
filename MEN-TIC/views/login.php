@@ -25,8 +25,6 @@
 </head>
 
 <body>
-    <section>
-        <article>
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 mx-auto">
@@ -60,9 +58,7 @@
                                     </div>
                                     <div class="col-md-12 mb-3">
                                         <p class="text-center">
-                                            <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">
-                                 </i> Iniciar con Google
-                                 </a>
+                                            <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus"></i>Iniciar con Google </a>
                                         </p>
                                     </div>
                                     <div class="form-group">
@@ -100,20 +96,14 @@
                                             <p class="text-center"><a href="#" id="signin">¿Ya tienes cuenta?</a></p>
                                         </div>
                                     </div>
+                                    <!-- La siguiente etiqueta estaba mal cerrada, estaba en la linea 105-->
+                                </form>
                             </div>
-                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </article>
-    </section>
-    <footer>
-        <!--<h4>Avisos legales</h4>
-        <a href="http://dominio.com/aviso-legal">Política de cookies</a>
-        <h4>Redes sociales</h4>
-        <a href="http://facebook.com/mi-pagina-de-facebook">Mi Facebook</a>-->
-    </footer>
+     
     <script src="./../js/login.js"></script>
 </body>
 

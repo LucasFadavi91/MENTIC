@@ -1,6 +1,5 @@
 <?php
 
-
 require_once("../models/model_register_login.php");
 
 if (!isset($_POST) || empty($_POST)) {

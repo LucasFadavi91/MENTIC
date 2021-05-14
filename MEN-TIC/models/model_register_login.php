@@ -69,8 +69,8 @@ function getID(){
 			$select->execute();
 
     		foreach($select->fetchAll() as $row) {
-        	$num=$row['id_user'];
-        	//var_dump($row);
+        		$num=$row['id_user'];
+        		//var_dump($row);
     		}
 
 			/*En la variable num sacamos 'D00X', el id del user */
@@ -119,15 +119,45 @@ function comprobarCredenciales($email, $password) {
 
 }
 
+function getNameUser($id_user) {
+
+	global $conexion;
+
+	try {
+	
+		$select = $conexion->prepare("SELECT firstname FROM users WHERE id_user= :id_user");
+		$select->bindParam(":id_user", $id_user);
+		$select->execute();
+
+		return $select->fetch(PDO::FETCH_ASSOC)["firstname"];
+
+	} catch (PDOException $ex) {
+		return null;
+	}
+
+}
+
 function crearSesionLogin($id_user) {
 	
 	// Dado un $id_user, se crea una sesion para mantener iniciada la sesión
 	// Se guarda el ID del Usuario (id_user)
 
-	session_start();
-
-	$_SESSION["id_user"] = $id_user;
 	
+	global $conexion;
+
+		$stmt = $conexion->prepare("SELECT * FROM users WHERE id_user = :id_user");
+		$stmt->bindParam(":id_user", $id_user);
+		$stmt->execute();
+
+		foreach($stmt->fetchAll() as $row) {
+        	$name=$row['first_name'];
+    	}
+
+    	//session_start();
+
+		$_SESSION["id_user"] = $id_user;
+		$_SESSION["name"] = $name;
+
 }
 
 	
