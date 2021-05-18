@@ -47,7 +47,7 @@ if (!isset($_POST) || empty($_POST)) {
         }
 
         //echo "Nuevo usuario dado de alta";
-        header('location: ../controllers/controller_menu-principal2.php'); 
+        header('location: ../controllers/controller_menu-principal.php'); 
 }
 
 /*Hay que tratar el tema de la recuperacion de sesion en caso de que ya haya una.
