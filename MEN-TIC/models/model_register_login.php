@@ -43,7 +43,8 @@ function altaUser($firstname, $lastname, $email, $password) {
 		$stmt->bindParam(":firstname", $firstname);
 		$stmt->bindParam(":lastname", $lastname);
 		$stmt->bindParam(":email", $email);
-		$stmt->bindParam(":password", $password);
+		$stmt->bindparam(':password',$hashed_password); /* cifrado */
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 		$stmt->bindParam(":admin", $admin);
 		$stmt->bindParam(":from_date", $from_date);
 		$stmt->bindParam(":to_date", $to_date);
@@ -58,6 +59,7 @@ function altaUser($firstname, $lastname, $email, $password) {
 		return false;
 	}
 }
+
 
 function getID(){
 
@@ -106,13 +108,23 @@ function comprobarCredenciales($email, $password) {
 
 	try {
 
-		$credenciales = $conexion->prepare("SELECT id_user FROM users WHERE email = :id_user AND password = :password");
-		$credenciales->bindParam(":id_user", $email);
-		$credenciales->bindParam(":password", $password);
-		$credenciales->execute();
+		$sql = $conexion->prepare("SELECT password, to_date FROM users WHERE email = :email");
+		$sql->bindParam(":email", $email);
+		$sql->execute();
+		$passCifr = $sql->fetch(PDO::FETCH_ASSOC)["password"];
 
-		return $credenciales->fetch(PDO::FETCH_ASSOC)["id_user"];
+		/* si la pass coincide, puede loguear */
+			
+		if(password_verify($password, $passCifr)){    
+			
+			$credenciales = $conexion->prepare("SELECT id_user FROM users WHERE email = :email AND password = :password AND to_date IS NULL");
+			$credenciales->bindParam(":email", $email);
+			$credenciales->bindParam(":password", $passCifr);
+			$credenciales->execute();
 
+			return $credenciales->fetch(PDO::FETCH_ASSOC)["id_user"];
+		}
+				
 	} catch (PDOException $ex) {
 		return null;
 	}

@@ -120,7 +120,7 @@ body {
                 </div>
                 <h6>What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?</h6>
                 <div class="d-flex justify-content-between install mt-3"><span>La comunidad del anillo</span>
-                  <a href="./prueba1"><span class="text-primary">Realizar Test&nbsp;<i class="fa fa-angle-right"></i></span></a>
+                  <a href="../views/prueba1"><span class="text-primary">Realizar Test&nbsp;<i class="fa fa-angle-right"></i></span></a>
                 </div>
             </div>
         </div>
@@ -206,5 +206,5 @@ body {
         </div>
     </div>
 </div>
-                            </body>
-                        </html>
+</body>
+</html>
