@@ -64,7 +64,7 @@ body {
           <a class="nav-link" href="#">Aprender <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Historias</a>
+          <a class="nav-link" href="controller_historias.php">Historias</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -72,9 +72,7 @@ body {
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Temario</a>
-            <a class="dropdown-item" href="#">Preguntas destacadas</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Alguna cosilla mas</a>
+            <a class="dropdown-item" href="controller_preguntas.php">Preguntas destacadas</a>    
           </div>
         </li>
         
@@ -87,7 +85,7 @@ body {
           <?php echo htmlspecialchars($_SESSION["name"]) ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Tu perfil</a>
+            <a class="dropdown-item" href="controller_perfil.php">Tu perfil</a>
             <a class="dropdown-item" href="#">Configuración</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="../controllers/logout.php"><i class="fa fa-sign-out"></i> Cerrar sesión</a>

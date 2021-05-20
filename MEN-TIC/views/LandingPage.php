@@ -51,10 +51,10 @@
                 <div class="row">
                     <div class="col-md-12 mx-auto">
                         <div class="col-md-12 mx-auto">
-                            <div class="col-md-5 mx-auto"><img src="./../img/pverde.png" alt=""><br><br></div>
+                            <div class="col-md-5 mx-auto"><img src="./../img/fox.png" alt=""><br><br></div>
                             <div>
-                                <h3>La nueva forma de aprender un idioma.</h3>
-                                <div class=""><span><span>Aprender con MENTIC es divertido y adictivo. Gana puntos por responder preguntas correctamente, compite contrarreloj y sube de nivel.  Nuestras lecciones cortas son efectivas y tenemos <a href="/efficacy">prueba de que funcionan</a>.</span></span>
+                                <h3>La nueva forma de aprender</h3>
+                                <div class=""><span><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum. <a href="/efficacy">prueba de que funcionan</a>.</span></span>
                                     <h3 style="color:royalblue;">Descubre cómo lo hacemos</h3>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>Aprendizaje personalizado</h4>
-                                <p>Las lecciones de Mentic se adaptan a tu estilo de aprendizaje. Los ejercicios están diseñados a tu medida para ayudarte a aprender y repasar el vocabulario de forma efectiva.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.</p>
 
                             </div>
                         </div>
@@ -90,7 +90,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>Comprueba tu respuesta de inmediato</h4>
-                                <p>Puedes ver tus respuestas correctas al instante. Cuando fallas un ejercicio, te mostramos cómo mejorar rápidamente.</p>
+                                <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.</p>
 
                             </div>
                         </div>
@@ -102,7 +103,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>Mantén la motivación con premios</h4>
-                                <p>Gana monedas virtuales, desbloquea nuevos niveles y ve cómo aumenta tu fluidez mientras aprendes nuevas palabras, frases y gramática.</p>
+                                <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum</p>
 
                             </div>
                         </div>
@@ -111,8 +114,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>Mejora rápidamente</h4>
-                                <p>Mentic funciona. Un estudio comprobó que 34 horas usando Mentic es equivalente a 1 semestre universitario de aprendizaje de idiomas.</p>
-
+                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum</p>
                             </div>
                         </div>
                     </div>
