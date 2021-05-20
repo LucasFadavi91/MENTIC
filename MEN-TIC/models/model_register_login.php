@@ -163,12 +163,16 @@ function crearSesionLogin($id_user) {
 
 		foreach($stmt->fetchAll() as $row) {
         	$name=$row['first_name'];
+        	$lastname=$row['last_name'];
+        	$email=$row['email'];
     	}
 
     	//session_start();
 
 		$_SESSION["id_user"] = $id_user;
 		$_SESSION["name"] = $name;
+		$_SESSION["lastname"] = $lastname;
+		$_SESSION["email"] = $email;
 
 }
 
