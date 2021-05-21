@@ -76,9 +76,7 @@ body {
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Temario</a>
             <a class="dropdown-item" href="../controllers/controller_preguntas.php">Preguntas destacadas</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Alguna cosilla mas</a>
-          </div>
+         </div>
         </li>
         
       </ul>
