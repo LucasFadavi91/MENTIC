@@ -33,6 +33,6 @@ Incluir al final de la página (antes de cerrar la etiqueta body):
 
 
 - Paso 4:
-Añadir en la etiqueta body y en la etiqueta qur tenga la clase container, la clase:
+Añadir en la etiqueta body y en la etiqueta que tenga la clase container, la clase:
 
 night-mode-available
