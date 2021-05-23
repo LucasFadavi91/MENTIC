@@ -93,7 +93,7 @@
                                     </div>
                                     <div class="col-md-12 ">
                                         <div class="form-group">
-                                            <p class="text-center"><a href="#" id="signin">¿Ya tienes cuenta?</a></p>
+                                            <p class="text-center"><a href="#" id="login">¿Ya tienes cuenta?</a></p>
                                         </div>
                                     </div>
                                     <!-- La siguiente etiqueta estaba mal cerrada, estaba en la linea 105-->

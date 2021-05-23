@@ -19,6 +19,8 @@
 <title>Menu 2</title>
 <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+<link href='../css/nightmode.css' rel='stylesheet'>
 
 <style>
 body {
@@ -41,11 +43,12 @@ body {
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
     <script type='text/javascript'></script>
+<link rel="stylesheet" href="../css/tarjetas.css">
 </head>
 
 
 
-<body oncontextmenu='return false' class='snippet-body'>
+<body oncontextmenu='return false' class='snippet-body night-mode-available'>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007bff;">
     <a class="navbar-brand" href="../views/LandingPage.php">
       
@@ -78,6 +81,20 @@ body {
         
       </ul>
 
+      <!-- ----------NIGHT MODE------------ -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <div class="night-mode-button">
+          <input type="checkbox" class="checkbox" id="night-mode">
+          <label for="night-mode" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="blob"></div>
+          </label>
+        </div>
+      </li>
+    </ul>
+
 
       <ul class="navbar-nav mr-right">
         <li class="nav-item dropdown">
@@ -105,10 +122,10 @@ body {
 <!--  -------- EMPIEZAN LAS TARJETAS --------  -->
 
   
-<div class="container mt-5">
-    <div class="row">
+<div class="container mt-5 night-mode-available">
+    <div class="row night-mode-available">
         <div class="col-md-4">
-            <div class="card p-3">
+            <div class="card p-3 effect">
                 <div class="d-flex flex-row mb-3"><img src="https://i.pinimg.com/originals/5d/c2/f6/5dc2f60a5b2f660efb4b96b34a1178ea.jpg" width="70">
                     <div class="d-flex flex-column ml-2"><span>Nivel 1</span>
                       <span class="text-black-50">What is Lorem Ipsum?</span>
@@ -123,7 +140,7 @@ body {
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card p-3">
+            <div class="card p-3 effect">
                 <div class="d-flex flex-row mb-3"><img src="https://thumbs.dreamstime.com/z/j-r-retrato-de-tolkien-125545236.jpg" width="70">
                     <div class="d-flex flex-column ml-2"><span>Nivel 2</span>
                       <span class="text-black-50">What is Lorem Ipsum?</span>
@@ -137,7 +154,7 @@ body {
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card p-3">
+            <div class="card p-3 effect">
                 <div class="d-flex flex-row mb-3"><img src="https://st4.depositphotos.com/16418170/21369/v/1600/depositphotos_213697740-stock-illustration-moscow-russia-august-21-2018.jpg" width="70">
                     <div class="d-flex flex-column ml-2"><span>Nivel 3</span>
                       <span class="text-black-50">What is Lorem Ipsum?</span>
@@ -152,7 +169,7 @@ body {
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card p-3">
+            <div class="card p-3 effect">
                 <div class="d-flex flex-row mb-3"><img src="https://thumbs.dreamstime.com/z/homer-portrait-125545216.jpg" width="70">
                     <div class="d-flex flex-column ml-2"><span>Nivel 4</span>
                       <span class="text-black-50">What is Lorem Ipsum?</span>
@@ -168,7 +185,7 @@ body {
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card p-3">
+            <div class="card p-3 effect">
                 <div class="d-flex flex-row mb-3"><img src="https://previews.123rf.com/images/marusyachaika/marusyachaika1809/marusyachaika180900074/109067988-fyodor-dostoevsky-engraved-vector-portrait-with-ink-contours-russian-novelist-short-story-writer-ess.jpg" width="70">
                     <div class="d-flex flex-column ml-2"><span>Nivel 5</span>
                       <span class="text-black-50">What is Lorem Ipsum?</span>
@@ -185,7 +202,7 @@ body {
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card p-3">
+            <div class="card p-3 effect">
                 <div class="d-flex flex-row mb-3"><img src="https://st4.depositphotos.com/16418170/22329/v/1600/depositphotos_223291458-stock-illustration-ivan-turgenev-engraved-vector-portrait.jpg" width="70">
                     <div class="d-flex flex-column ml-2"><span>Nivel 6</span>
                       <span class="text-black-50">What is Lorem Ipsum?</span>
@@ -204,5 +221,6 @@ body {
         </div>
     </div>
 </div>
+<script src="../js/nightmode.js" type='text/javascript'></script>
 </body>
 </html>
