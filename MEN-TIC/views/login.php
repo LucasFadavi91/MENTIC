@@ -18,6 +18,7 @@
     <!--<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">-->
     <link href="./../css/login.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="icon" href="../img/favicon-16x16.png" type="image/png" sizes="16x16">
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -93,7 +94,7 @@
                                     </div>
                                     <div class="col-md-12 ">
                                         <div class="form-group">
-                                            <p class="text-center"><a href="#" id="signin">¿Ya tienes cuenta?</a></p>
+                                            <p class="text-center"><a href="#" id="login">¿Ya tienes cuenta?</a></p>
                                         </div>
                                     </div>
                                     <!-- La siguiente etiqueta estaba mal cerrada, estaba en la linea 105-->

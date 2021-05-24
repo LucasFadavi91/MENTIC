@@ -21,9 +21,10 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+<link href='../css/nightmode.css' rel='stylesheet'>
 <link href='../css/perfil.css' rel='stylesheet'>
-
-
+<link rel="icon" href="../img/favicon-16x16.png" type="image/png" sizes="16x16">
 
 <style>
 body {
@@ -41,7 +42,7 @@ label{
 
 
 
-<body oncontextmenu='return false' class='snippet-body'>
+<body oncontextmenu='return false' class='snippet-body night-mode-available'>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007bff;">
     <a class="navbar-brand" href="../views/LandingPage.php">
       
@@ -62,6 +63,9 @@ label{
         <li class="nav-item">
           <a class="nav-link" href="../controllers/controller_historias.php">Historias</a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link" id="asignaturas" href="controller_menu_categories.php">Asignaturas</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Más
@@ -69,13 +73,23 @@ label{
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Temario</a>
             <a class="dropdown-item" href="../controllers/controller_preguntas.php">Preguntas destacadas</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Alguna cosilla mas</a>
           </div>
-        </li>
-        
+        </li>    
       </ul>
 
+      <!-- ----------NIGHT MODE------------ -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <div class="night-mode-button">
+          <input type="checkbox" class="checkbox" id="night-mode">
+          <label for="night-mode" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="blob"></div>
+          </label>
+        </div>
+      </li>
+    </ul>
 
       <ul class="navbar-nav mr-right">
         <li class="nav-item dropdown">
@@ -103,7 +117,7 @@ label{
 
   <h1 style="text-align: center; font-size: 40pt; margin-top: 50px;">PERFIL</h1>
   
-  <div class="container emp-profile" id="position">
+  <div class="container emp-profile night-mode-available" id="position">
             <form method="post" enctype="multipart/form-data">
 
                 <!--
@@ -125,37 +139,36 @@ label{
                         </form>
                     </div>
                 </div>
-                <hr>
-                -->
+                <hr> -->
 
                 
                 <div class="row">
                     <div class="col-md-12">
                         <div class="tab-content profile-tab" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Nombre</label> <!-- NOMBRE -->
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p><?php echo htmlspecialchars($_SESSION["name"]) ?></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Apellidos</label> <!-- APELLIDOS -->
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p><?php echo htmlspecialchars($_SESSION["lastname"]) ?></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6"> 
-                                                <label>Email</label> <!-- EMAIL -->
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p><?php echo htmlspecialchars($_SESSION["email"]) ?></p>
-                                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Nombre</label> <!-- NOMBRE -->
+                                </div>
+                                <div class="col-md-6">
+                                    <p><?php echo htmlspecialchars($_SESSION["name"]) ?></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Apellidos</label> <!-- APELLIDOS -->
+                                </div>
+                                <div class="col-md-6">
+                                    <p><?php echo htmlspecialchars($_SESSION["lastname"]) ?></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                    <label>Email</label> <!-- EMAIL -->
+                                </div>
+                                <div class="col-md-6">
+                                    <p><?php echo htmlspecialchars($_SESSION["email"]) ?></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -163,21 +176,7 @@ label{
             </form>           
         </div>
 
+    <script src="../js/nightmode.js" type='text/javascript'></script>
+
 </body>
-    <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    // Asignamos el atributo src a la tag de imagen
-                    $('#imagen').attr('src', e.target.result);
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        // El listener va asignado al input
-        $("#elinput").change(function() {
-        readURL(this);
-        });
-    </script>
 </html>

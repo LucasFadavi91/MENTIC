@@ -2,26 +2,26 @@
 
   session_start();
 
-	if (isset($_SESSION) && isset($_SESSION["id_user"]) === false) {
-	  //exit("No estas logueado, datos incorrectos.");
+    if (isset($_SESSION) && isset($_SESSION["id_user"]) === false) {
+      //exit("No estas logueado, datos incorrectos.");
     //Redirecciono al login
     header("location: ../controllers/controller_register_login.php");
     exit;
-		
-	}
+        
+    }
 ?>
 
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<title>MENTIC - Menu</title>
+<title>MENTIC - Asignaturas</title>
 <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-<link href='../css/nightmode.css' rel='stylesheet'>
 <link rel="icon" href="../img/favicon-16x16.png" type="image/png" sizes="16x16">
+
 
 <style>
 body {
@@ -40,29 +40,31 @@ body {
 .col-md-4 {
     margin-top: 27px
 }
+
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--<script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript'></script>
+<link rel="stylesheet" href="../css/login.css">
+<link rel="stylesheet" href="../css/nightmode.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+
+    <script>
        $(window).on("load", inicial);
 
             function inicial() {
-                $("#asignaturas").on("click", getCategory1);
+                $("#asignatura1").on("click", getCategory1);
             
             }
 
             function getCategory1() {
-                $("#ajax").load("../views/view_menu_categories.php");
+                $("#ajax").load("controller_category_one.php");
             }
-    </script>-->
-    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
-    <script type='text/javascript'></script>
-<link rel="stylesheet" href="../css/tarjetas.css">
+    </script>
+  
 </head>
-
-
-
 <body oncontextmenu='return false' class='snippet-body night-mode-available'>
+<div id="ajax">
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007bff;">
     <a class="navbar-brand" href="../views/LandingPage.php">
       
@@ -77,14 +79,14 @@ body {
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Aprender <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="../controllers/controller_menu-principal.php">Aprender <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="controller_historias.php">Historias</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="asignaturas" href="controller_menu_categories.php">Asignaturas</a>
+         <li class="nav-item active">
+          <a class="nav-link" id="asignaturas" href="#">Asignaturas</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -92,12 +94,12 @@ body {
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Temario</a>
-            <a class="dropdown-item" href="controller_preguntas.php">Preguntas destacadas</a>    
+            <a class="dropdown-item" href="../controllers/controller_preguntas.php">Preguntas destacadas</a>
           </div>
         </li>
         
       </ul>
-
+    
       <!-- ----------NIGHT MODE------------ -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
@@ -112,14 +114,13 @@ body {
       </li>
     </ul>
 
-
       <ul class="navbar-nav mr-right">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <?php echo htmlspecialchars($_SESSION["name"]) ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="controller_perfil.php">Tu perfil</a>
+            <a class="dropdown-item" href="../controllers/controller_perfil.php">Tu perfil</a>
             <a class="dropdown-item" href="#">Configuración</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="../controllers/logout.php"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
@@ -127,19 +128,34 @@ body {
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Mis Puntos</a>
-        </li>
-        
-      </ul>
-     
-      
+        </li>   
+      </ul>     
     </div>
   </nav>
+    <br>
+    <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <div id="first">
+                        <div class="myform form ">
+                            <div class="logo mb-3">
+                                <div class="col-md-12 text-center">
+                                    <h1 style="color: #007bff;">Asignaturas</h1>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-md-12 text-center ">
+                                <button type="button" name="asignatura1" id="asignatura1" class=" btn btn-block mybtn btn-primary tx-tfm">Asignatura 1</button>
+                                <button type="button" name="asignatura2" id="asignatura2" class=" btn btn-block mybtn btn-primary tx-tfm">Asignatura 2</button>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
- <!-- ----------EMPIEZA AJAX------------ -->  
- <!--<div id="ajax">
-     
-    </div>-->
- 
 <script src="../js/nightmode.js" type='text/javascript'></script>
 </body>
 </html>

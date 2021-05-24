@@ -1,0 +1,16 @@
+.effect:hover
+{
+    background-color: white;
+    transition: background-color 0.5s;
+    transition: transform 0.5s;
+}
+.effect:hover
+{
+    background-color: lightblue;
+    transform: scale(1.05, 1.05);
+}
+.row
+{
+    padding: 15px;
+    border-radius: 3%;
+}

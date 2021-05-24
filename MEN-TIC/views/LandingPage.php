@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    
     <link rel="stylesheet" href="../css/Landingpage.css">
+    <link rel="icon" href="../img/favicon-16x16.png" type="image/png" sizes="16x16">
 
 </head>
 
