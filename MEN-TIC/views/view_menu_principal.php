@@ -16,31 +16,38 @@
 <head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<title>MENTIC - Perfil</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<title>MENTIC - Menu principal</title>
 <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
 <link href='../css/nightmode.css' rel='stylesheet'>
-<link href='../css/perfil.css' rel='stylesheet'>
 <link rel="icon" href="../img/favicon-16x16.png" type="image/png" sizes="16x16">
 
 <style>
 body {
     background: whitesmoke;
 }
-#position
-{
-    margin-top: 120px;
+
+/*Color Estrellas dificultad */
+.ratings i {
+    color: orangered;
 }
-label{
-    font-weight: bold;
+
+.install span {
+    font-size: 12px
+}
+
+.col-md-4 {
+    margin-top: 27px
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript'></script>
+<link rel="stylesheet" href="../css/menu_categories.css">
+<link rel="stylesheet" href="../css/tarjetas.css">
 </head>
-
-
 
 <body oncontextmenu='return false' class='snippet-body night-mode-available'>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007bff;">
@@ -57,13 +64,13 @@ label{
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="../controllers/controller_menu_principal.php">Aprender</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Aprender <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../controllers/controller_historias.php">Historias</a>
+          <a class="nav-link" href="controller_historias.php">Historias</a>
         </li>
-         <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Modulos
           </a>
@@ -78,9 +85,10 @@ label{
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Temario</a>
-            <a class="dropdown-item" href="../controllers/controller_preguntas.php">Preguntas destacadas</a>
+            <a class="dropdown-item" href="controller_preguntas.php">Preguntas destacadas</a>    
           </div>
-        </li>    
+        </li>
+        
       </ul>
 
       <!-- ----------NIGHT MODE------------ -->
@@ -97,13 +105,14 @@ label{
       </li>
     </ul>
 
+
       <ul class="navbar-nav mr-right">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <?php echo htmlspecialchars($_SESSION["name"]) ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../controllers/controller_perfil.php">Tu perfil</a>
+            <a class="dropdown-item" href="controller_perfil.php">Tu perfil</a>
             <a class="dropdown-item" href="#">Configuración</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="../controllers/logout.php"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
@@ -119,70 +128,36 @@ label{
     </div>
   </nav>
 
-  <!-- PERFIL -->
+ <!-- ----------EMPIEZA EL MENU------------ -->  
+ <br>
+    <br>
 
-  <h1 style="text-align: center; font-size: 40pt; margin-top: 50px;">PERFIL</h1>
-  
-  <div class="container emp-profile night-mode-available" id="position">
-            <form method="post" enctype="multipart/form-data">
-
-                <!--
-                <div class="row">
-                    <div class="col-md-3" style="left: 38%;">
-                        <div>
-                            <img src="#" alt="" id="imagen" width="150px"/>
-                        </div>
-                    </div>
-                    <div class="col-md-3" style="left: 38%;">
-                        <form enctype="multipart/form-data" method="post" action="upload.php">
-                            <div>
-                                <img src="#" alt="" id="imagen" width="150px"/>
-                                Cambiar imagen:
-                                <input type="hidden" name="MAX_FILE_SIZE" value="30000" /> 
-                                <input type="file" name="file" id="elinput"/>
-                                <input type="submit" name="submit" value="Cambiar imagen de perfil">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <hr> -->
-
-                
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Nombre</label> <!-- NOMBRE -->
-                                </div>
-                                <div class="col-md-6">
-                                    <p><?php echo htmlspecialchars($_SESSION["name"]) ?></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <div id="first">
+                       <div class="col-md-12 text-center">
+                        <h5>¡Bienvenido! &nbsp<i class="fa fa-star"></i></i><b style="color:#007bff;" ><?php echo htmlspecialchars($_SESSION["name"]); ?></b></h5>
+                       </div>
+                       <br>
+                        <div class="myform form ">
+                            <div class="logo mb-3">
+                                <div class="col-md-12 text-center">
+                                    <h1 style="color: #007bff;">Modulos</h1>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Apellidos</label> <!-- APELLIDOS -->
-                                </div>
-                                <div class="col-md-6">
-                                    <p><?php echo htmlspecialchars($_SESSION["lastname"]) ?></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6"> 
-                                    <label>Email</label> <!-- EMAIL -->
-                                </div>
-                                <div class="col-md-6">
-                                    <p><?php echo htmlspecialchars($_SESSION["email"]) ?></p>
-                                </div>
-                            </div>
+                            <br>
+                            <div class="col-md-12 text-center ">
+                                <button type="button" onclick="window.location.href='../controllers/controller_category_one.php'" name="asignatura1" id="asignatura1" class=" btn btn-block mybtn btn-primary tx-tfm">Modulo 1</button>
+                                <button type="button" name="asignatura2" id="asignatura2" class=" btn btn-block mybtn btn-primary tx-tfm">Modulo 2</button>
+                            </div>  
                         </div>
                     </div>
                 </div>
-            </form>           
+            </div>
         </div>
-
-    <script src="../js/nightmode.js" type='text/javascript'></script>
-
+    </div>
+ 
+<script src="../js/nightmode.js" type='text/javascript'></script>
 </body>
 </html>
