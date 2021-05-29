@@ -167,8 +167,7 @@ function crearSesionLogin($id_user) {
         	$email=$row['email'];
     	}
 
-    	//session_start();
-
+    
 		$_SESSION["id_user"] = $id_user;
 		$_SESSION["name"] = $name;
 		$_SESSION["lastname"] = $lastname;

@@ -10,6 +10,6 @@ session_unset();
 session_destroy();
 
 //Redirecciono al login
-header("location: ../controllers/controller_register_login.php");
+header("location: ../index.php");
 exit;
 ?>
