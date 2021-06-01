@@ -15,7 +15,7 @@ start_btn.onclick = () => {
 exit_btn.onclick = () => {
     /*info_box.classList.remove("activeInfo");*/ /* ANTES */
 
-    window.location.href='../../controllers/controller_modulo1_nivel1.php'
+    window.location.href='../../controllers/controller_menu-principal.php'
 }
 
 continue_btn.onclick = () => {
@@ -43,16 +43,13 @@ const quit_quiz = result_box.querySelector('.buttons .quit');
 
 quit_quiz.onclick = () => {
     /*window.location.reload();*/ /* ANTES */
-    window.location.href='../../controllers/controller_modulo1_nivel1.php'
+    window.location.href='../../controllers/controller_menu-principal.php'
 }
 
 /* Esto lo vamos a quitar porque no funciona el repetir el test , hasta la linea 66*/
 restart_quiz.onclick = () => {
 
-   
-    document.getElementById("restart").value = userScore;
-
- 
+     document.getElementById("restart").value = userScore;
 }
 
 next_btn.onclick = () => {

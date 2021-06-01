@@ -5,7 +5,7 @@ require_once("../models/model_register_login.php");
 /*No se si es necesario el empty($_POST['register'])*/
 if (!isset($_POST) || empty($_POST)) {
 
-    require_once("../views/login.php");
+    require_once("../views/view_login.php");
 
 
     }else if(isset($_POST['logear']) && !isset($_POST['register'])){
@@ -22,7 +22,7 @@ if (!isset($_POST) || empty($_POST)) {
             crearSesionLogin($id_user);
         }
 
-        header('location: ../controllers/controller_menu-principal.php');
+        header('location: ../controllers/controller_menu_principal.php');
 
 
     }else if(isset($_POST['register']) && !isset($_POST['logear'])){
@@ -47,7 +47,7 @@ if (!isset($_POST) || empty($_POST)) {
         }
 
         //echo "Nuevo usuario dado de alta";
-        header('location: ../controllers/controller_menu-principal.php'); 
+        header('location: ../controllers/controller_menu_principal.php'); 
 }
 
 /*Hay que tratar el tema de la recuperacion de sesion en caso de que ya haya una.

@@ -9,8 +9,6 @@
 # Funcionalidad: 
 #  devuelve la fecha en el formato especificado
 #    
-# Estructuras array, select
-#
 # retorna: $fecha
 #
 #
@@ -24,7 +22,16 @@ function getFecha(){
     return $fecha;
 }
 
-
+# Función 'altaUser'. 
+# Parámetros: $firstname, $lastname, $email, $password
+#   
+# Funcionalidad: Da de alta un usario nuevo en la BBDD.
+# 
+# Return: $true/false
+#
+# Realizado: 16/04/2021
+# 
+# Código por MENTIC
 function altaUser($firstname, $lastname, $email, $password) {
 	
 	global $conexion;
@@ -61,6 +68,16 @@ function altaUser($firstname, $lastname, $email, $password) {
 }
 
 
+# Función 'getID'. 
+# Parámetros: ninguno
+#   
+# Funcionalidad: Obtener el ultimo id_user.
+# 
+# Return: $num
+#
+# Realizado: 16/04/2021
+# 
+# Código por MENTIC
 function getID(){
 
   
@@ -99,6 +116,16 @@ function getID(){
 
 }
 
+# Función 'comprobarCredenciales'. 
+# Parámetros: $email, $password
+#   
+# Funcionalidad: Comprueba las credenciales que introduce el usuario en la BBDD.
+# 
+# Return: $credenciales
+#
+# Realizado: 16/04/2021
+# 
+# Código por MENTIC
 function comprobarCredenciales($email, $password) {
 	
 	// Dado un $id_user y una $clave, se comprueba si existe algún usuario con esos credenciales
@@ -131,6 +158,16 @@ function comprobarCredenciales($email, $password) {
 
 }
 
+# Función 'getNameUser'. 
+# Parámetros: $id_user
+#   
+# Funcionalidad: Obtener el firstname.
+# 
+# Return: $select
+#
+# Realizado: 16/04/2021
+# 
+# Código por MENTIC
 function getNameUser($id_user) {
 
 	global $conexion;
@@ -149,6 +186,16 @@ function getNameUser($id_user) {
 
 }
 
+# Función 'crearSesionLogin'. 
+# Parámetros: $id_user
+#   
+# Funcionalidad: Crear la sesion estableciendo las variables.
+# 
+# Return: Ninguno
+#
+# Realizado: 16/04/2021
+# 
+# Código por MENTIC
 function crearSesionLogin($id_user) {
 	
 	// Dado un $id_user, se crea una sesion para mantener iniciada la sesión
@@ -167,8 +214,7 @@ function crearSesionLogin($id_user) {
         	$email=$row['email'];
     	}
 
-    	//session_start();
-
+    
 		$_SESSION["id_user"] = $id_user;
 		$_SESSION["name"] = $name;
 		$_SESSION["lastname"] = $lastname;
@@ -176,5 +222,26 @@ function crearSesionLogin($id_user) {
 
 }
 
+# Función : getPuntos
+# Parametros: $id_user
+#  
+# 
+# Funcionalidad: 
+#  devuelve los puntos totales de un user
+#    
+# retorna: $puntosTotales
+function getPuntos($id_user){
+
+    global $conexion;
+
+    $stmt0 = $conexion->prepare("SELECT SUM(points_modulo) as puntosTotales FROM user_modulo WHERE id_user=:id_user");
+				$stmt0->bindParam(':id_user', $id_user);
+		$stmt0->execute();
+    
+    foreach($stmt0->fetchAll() as $row) {
+        $puntosTotales=$row['puntosTotales'];
+    }
+    return $puntosTotales;
+}
 	
 ?>

@@ -4,7 +4,7 @@ $("#signup").click(function() {
     });
 });
 
-$("#signin").click(function() {
+$("#login").click(function() {
     $("#second").fadeOut("fast", function() {
         $("#first").fadeIn("fast");
     });

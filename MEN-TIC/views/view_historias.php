@@ -16,9 +16,10 @@
 <head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<title>Historias</title>
+<title>MENTIC - Historias</title>
 <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+<link rel="icon" href="../img/favicon-16x16.png" type="image/png" sizes="16x16">
 
 
 <style>
@@ -43,14 +44,15 @@ body {
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
 <script type='text/javascript'></script>
-<link rel="stylesheet" href="../css/historias.css">
+<link rel="stylesheet" href="../css/nightmode.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
 </head>
 
 
 
-<body oncontextmenu='return false' class='snippet-body'>
+<body oncontextmenu='return false' class='snippet-body night-mode-available'>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007bff;">
-    <a class="navbar-brand" href="../views/LandingPage.php">
+    <a class="navbar-brand" href="../controllers/controller_menu_principal.php">
       
       <!-- Icono de Home -->
       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
@@ -64,10 +66,19 @@ body {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../controllers/controller_menu-principal.php">Aprender <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="../controllers/controller_menu_principal.php">Aprender <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Historias</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Modulos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../controllers/controller_modulo1.php">Modulo 1</a>
+            <a class="dropdown-item" href="#">Modulo 2</a>
+          </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,13 +87,24 @@ body {
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Temario</a>
             <a class="dropdown-item" href="../controllers/controller_preguntas.php">Preguntas destacadas</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Alguna cosilla mas</a>
           </div>
         </li>
         
       </ul>
-
+    
+      <!-- ----------NIGHT MODE------------ -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <div class="night-mode-button">
+          <input type="checkbox" class="checkbox" id="night-mode">
+          <label for="night-mode" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="blob"></div>
+          </label>
+        </div>
+      </li>
+    </ul>
 
       <ul class="navbar-nav mr-right">
         <li class="nav-item dropdown">
@@ -105,8 +127,10 @@ body {
       
     </div>
   </nav>
-  
-  
 
+
+
+  <script src="../js/nightmode.js" type='text/javascript'></script>
+  
 </body>
 </html>
