@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
 <link href='../../css/nightmode.css' rel='stylesheet'>
 <link href='../../css/levels.css' rel='stylesheet'>
-<link rel="icon" href="../img/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="icon" href="../../img/favicon-16x16.png" type="image/png" sizes="16x16">
 
 <style>
 body {
