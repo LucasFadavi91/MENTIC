@@ -223,7 +223,7 @@ SOMBRA DE TARJETAS
                             src="https://phantom-marca.unidadeditorial.es/4d64bcff7eac5a945a58a6ea25ac81cd/resize/1320/f/jpg/assets/multimedia/imagenes/2020/10/15/16027503427472.jpg" width="350px" height="233px" />
                     </div>
 
-                    <a class="card-action" href="../controllers/controllers_temas/controller_tema5.php"><i class="fa fa-book"></i></a>
+                    <a class="card-action" href="../../controllers/controllers_temas/controller_tema5.php"><i class="fa fa-book"></i></a>
                     <div class="card-heading night-mode-available">
                         Nivel 5
                     </div>
@@ -244,7 +244,7 @@ SOMBRA DE TARJETAS
                             src="https://cdn.motor1.com/images/mgl/43OlM/s1/2021-lexus-ls-facelift.jpg" width="350px" height="233px" />
                     </div>
 
-                    <a class="card-action" href="../controllers/controllers_temas/controller_tema6.php"><i class="fa fa-book"></i></a>
+                    <a class="card-action" href="../../controllers/controllers_temas/controller_tema6.php"><i class="fa fa-book"></i></a>
                     <div class="card-heading night-mode-available">
                         Nivel 6
                     </div>
