@@ -1,16 +1,3 @@
-<?php 
-
-  session_start();
-
-    if (isset($_SESSION) && isset($_SESSION["id_user"]) === false) {
-      //exit("No estas logueado, datos incorrectos.");
-    //Redirecciono al login
-    header("location: ../controllers/controller_register_login.php");
-    exit;
-        
-    }
-?>
-
 <!doctype html>
 <html>
 <head>
