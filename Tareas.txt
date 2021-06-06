@@ -1,0 +1,8 @@
+Estado actual de las tareas de Lucas:
+
+Todo el nivel 1 y los tests que corresponden con sus subniveles estan completos, acorde a lo especificado.
+
+Selección de modulos funcional, faltaria fixear la posibilidad de que el usuario al pulsar el boton de volver del navegador, 
+no pueda volver a seleccionar ningun modulo o al menos no en los que ya ha sido matriculado.
+
+Es necesario fixear las rutas de los bucles del desplegable de modulos y del menu para que la ruta de cada modulo lleve al que corresponde.
