@@ -24,7 +24,7 @@ function getFecha(){
 }
 
 # Función 'getModulos'. 
-# Parámetros: ninguno
+# Parámetros: $id_user
 #   
 # Funcionalidad: Obtener los modulos.
 # 
@@ -33,13 +33,13 @@ function getFecha(){
 # Realizado: 16/04/2021
 # 
 # Código por MENTIC
-function getModulos(){
+function getModulos($id_user){
 
 	global $conexion;
 
     $modulos = array();
     
-    $sql = "SELECT name_modulo FROM modulos ORDER BY name_modulo";
+    $sql = "SELECT name_modulo FROM modulos where id_modulo NOT IN (SELECT id_modulo FROM user_modulo WHERE id_user='$id_user' ORDER BY name_modulo)";
 
     foreach ($conexion->query($sql) as $row) {
         $modulos[]=$row['name_modulo'];
