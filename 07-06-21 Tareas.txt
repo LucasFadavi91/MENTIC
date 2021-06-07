@@ -20,6 +20,7 @@
       - /views/temario/view_tema4.php
       - /views/temario/view_tema5.php
       - /views/temario/view_tema6.php
+      - Añadido /img/temas/presentacion/intro.png
 
 6. Gestión de introducción de niveles/subniveles-> Pedro (07/06)
 ✔ 7. Incluir FAQs -> Pedro (07/06)
