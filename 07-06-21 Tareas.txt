@@ -3,6 +3,24 @@
 3. Links con el bucle (tanto desplegable como menú principal) -> Javi (07/06)
 4. Gestionar niveles y subniveles -> Javi (07/06)
 ✔ 5. Temarios responsive + presentación -> Pedro (07/06)
+      MIS ARCHIVOS MODIFICADOS:
+      - /css/temario.css
+      - /css/temas.css
+      - /controllers/controllers_temas/controller_presentacion.php
+      - /controllers/controllers_temas/controller_tema1.php
+      - /controllers/controllers_temas/controller_tema2.php
+      - /controllers/controllers_temas/controller_tema3.php
+      - /controllers/controllers_temas/controller_tema4.php
+      - /controllers/controllers_temas/controller_tema5.php
+      - /controllers/controllers_temas/controller_tema6.php
+      - /views/temario/view_presentacion.php
+      - /views/temario/view_tema1.php
+      - /views/temario/view_tema2.php
+      - /views/temario/view_tema3.php
+      - /views/temario/view_tema4.php
+      - /views/temario/view_tema5.php
+      - /views/temario/view_tema6.php
+
 6. Gestión de introducción de niveles/subniveles-> Pedro (07/06)
 7. Incluir FAQs -> Pedro (07/06)
 8. Modificaciones en base de datos -> Javi (07/06)
