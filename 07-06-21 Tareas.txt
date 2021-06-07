@@ -22,7 +22,7 @@
       - /views/temario/view_tema6.php
 
 6. Gestión de introducción de niveles/subniveles-> Pedro (07/06)
-7. Incluir FAQs -> Pedro (07/06)
+✔ 7. Incluir FAQs -> Pedro (07/06)
 8. Modificaciones en base de datos -> Javi (07/06)
 ✔ 9. Condición en el Select para ver los módulos correctamente -> Lucas (07/06)  [SELECT * FROM modulos WHERE id_modulo IS NOT IN (SELECT id_modulo from user_modulo);] 
 10. Crear view de que no tienes suficientes punto para entrar al nivel (o warning) -> Javi
