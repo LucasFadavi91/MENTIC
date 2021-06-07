@@ -24,7 +24,7 @@ function getFecha(){
 }
 
 # Función 'getModulos'. 
-# Parámetros: ninguno
+# Parámetros: $id_user
 #   
 # Funcionalidad: Obtener los modulos.
 # 
