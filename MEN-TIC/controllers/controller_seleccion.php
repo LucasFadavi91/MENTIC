@@ -17,7 +17,7 @@ require_once("../models/model_seleccion.php");
 
 if (!isset($_POST) || empty($_POST)) {
 
-	$modulos=getModulos();
+    $modulos=getModulos($_SESSION["id_user"]);
 
     require_once("../views/view_seleccion.php");
  
