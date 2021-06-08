@@ -149,12 +149,12 @@ SOMBRA DE TARJETAS
                     <div class="card-text night-mode-available">
                         <p class="test1"></p>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nivel1">Leer más</button>
-                        <div id="nivel1" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
+                        <div id="nivel1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
                           <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
+                            <div class="modal-content night-mode-available">
                               <div class="modal-header">
                                 <h4 class="modal-title">Introducción a la Intervención Psocisocial</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
                               </div> 
                               La primera unidad de trabajo recoge diferentes aspectos relacionados con conceptos básicos que serán necesarios para entender de manera completa la dimensión biopsicosocial de las personas y usuarios con los que trabajaréis en el futuro. <br>
                               Se incluyen también aspectos importantes relacionados con la psicología y las funciones cognitivas del ser humano, tanto básicas como superiores, así como la importancia de las emociones y sentimientos y de la inteligencia emocional en las personas.<br>
@@ -180,18 +180,18 @@ SOMBRA DE TARJETAS
                         Nivel 2
                     </div>
                     <div class="card-text night-mode-available">
-                        Las relaciones sociales
+                        <h6>Las relaciones sociales</h6>
                     </div>
                     <div class="card-text night-mode-available">
                     <p></p>
                     <!-- CONTENIDO -->
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nivel2">Leer más</button>
-                    <div id="nivel2" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+                    <div id="nivel2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
                           <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
+                            <div class="modal-content night-mode-available">
                               <div class="modal-header">
                                 <h4 class="modal-title">Las relaciones sociales</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
                               </div> 
                               La primera unidad de trabajo recoge diferentes aspectos relacionados con conceptos básicos que serán necesarios para entender de manera completa la dimensión biopsicosocial de las personas y usuarios con los que trabajaréis en el futuro. <br>
                               Se incluyen también aspectos importantes relacionados con la psicología y las funciones cognitivas del ser humano, tanto básicas como superiores, así como la importancia de las emociones y sentimientos y de la inteligencia emocional en las personas.<br>
@@ -216,22 +216,24 @@ SOMBRA DE TARJETAS
                         Nivel 3
                     </div>
                     <div class="card-text night-mode-available">
-                        Motivación y aprendizaje en la atención psicosocial
+                      <h6>Motivación y aprendizaje en la atención psicosocial</h6>
                     </div>
                     <div class="card-text night-mode-available">
                     <p></p>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nivel3">Leer más</button>
-                    <div id="nivel3" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
+                    <div id="nivel3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
                           <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
+                            <div class="modal-content night-mode-available">
                               <div class="modal-header">
                                 <h4 class="modal-title">Motivación y aprendizaje en la atención psicosocial</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
                               </div> 
-                              La primera unidad de trabajo recoge diferentes aspectos relacionados con conceptos básicos que serán necesarios para entender de manera completa la dimensión biopsicosocial de las personas y usuarios con los que trabajaréis en el futuro. <br>
-                              Se incluyen también aspectos importantes relacionados con la psicología y las funciones cognitivas del ser humano, tanto básicas como superiores, así como la importancia de las emociones y sentimientos y de la inteligencia emocional en las personas.<br>
-                              En cada subnivel se trabajarán unos contenidos, existiendo la posibilidad de repasar contenidos o de ampliarlos con los diferentes subniveles y las actividades que se incluyen en máster o en historias.<br>
-                              ¡Ánimo!!! Comenzamos una aventura que te dirige a profundizar y afianzar los contenidos trabajados y los conocimientos que irás adquiriendo a lo largo de este curso y de este módulo.
+                                La tercera unidad de trabajo recoge diferentes aspectos relacionados con el aprendizaje humano en general y la inteligencia, resaltando la teoría de las Inteligencias Múltiples de Howard Gardner.<br>
+                                Se incluyen también otros aspectos relacionados o que pueden influir en el aprendizaje como la actitud, la motivación, la maduración y la experiencia.Se incluyen algunas de las principales corrientes y/o teorías del aprendizaje que se han usado y se siguen usando en la actualidad y que pueden explicar las diferentes formas de aprender que tienen las personas.<br>
+                                Se recogen, asimismo, aspectos relacionados con las dificultades de motivación y de cara al aprendizaje de colectivos específicos y algunas estrategias que se podrían utilizar para ayudarles.<br>
+                                ¡Ánimo!!! Veremos sí tu motivación te ayuda o no en este proceso de aprendizaje. <br>
+                                ¡Date una oportunidad… o dos!!!
+
                             </div>
                           </div>
                         </div>
@@ -252,17 +254,17 @@ SOMBRA DE TARJETAS
                         Nivel 4
                     </div>
                     <div class="card-text night-mode-available">
-                        Técnicas de modificación de conducta
+                      <h6>Técnicas de modificación de conducta</h6>
                     </div>
                     <div class="card-text night-mode-available">
                     <p></p>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nivel4">Leer más</button>
-                    <div id="nivel4" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
+                    <div id="nivel4" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
                           <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
+                            <div class="modal-content night-mode-available">
                               <div class="modal-header">
                                 <h4 class="modal-title">Técnicas de modificación de conducta</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
                               </div> 
                               La primera unidad de trabajo recoge diferentes aspectos relacionados con conceptos básicos que serán necesarios para entender de manera completa la dimensión biopsicosocial de las personas y usuarios con los que trabajaréis en el futuro. <br>
                               Se incluyen también aspectos importantes relacionados con la psicología y las funciones cognitivas del ser humano, tanto básicas como superiores, así como la importancia de las emociones y sentimientos y de la inteligencia emocional en las personas.<br>
@@ -288,17 +290,17 @@ SOMBRA DE TARJETAS
                         Nivel 5
                     </div>
                     <div class="card-text night-mode-available">
-                        Técnicas de mantenimiento y rehabilitación de las funciones cognitivas
+                     <h6>Técnicas de mantenimiento y rehabilitación de las funciones cognitivas</h6>
                     </div>
                     <div class="card-text night-mode-available">
                     <p></p>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nivel5">Leer más</button>
-                    <div id="nivel5" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
+                    <div id="nivel5" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
                           <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
+                            <div class="modal-content night-mode-available">
                               <div class="modal-header">
                                 <h4 class="modal-title">Técnicas de mantenimiento y rehabilitación de las funciones cognitivas</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
                               </div> 
                               La primera unidad de trabajo recoge diferentes aspectos relacionados con conceptos básicos que serán necesarios para entender de manera completa la dimensión biopsicosocial de las personas y usuarios con los que trabajaréis en el futuro. <br>
                               Se incluyen también aspectos importantes relacionados con la psicología y las funciones cognitivas del ser humano, tanto básicas como superiores, así como la importancia de las emociones y sentimientos y de la inteligencia emocional en las personas.<br>
@@ -324,17 +326,17 @@ SOMBRA DE TARJETAS
                         Nivel 6
                     </div>
                     <div class="card-text night-mode-available">
-                        Animación y dinamización del ocio y tiempo libre en colectivos específicos
+                      <h6>Animación y dinamización del ocio y tiempo libre en colectivos específicos</h6>
                     </div>
                     <div class="card-text night-mode-available">
                     <p></p>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nivel6">Leer más</button>
-                    <div id="nivel6" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
+                    <div id="nivel6" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- CONTENIDO -->
                           <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
+                            <div class="modal-content night-mode-available">
                               <div class="modal-header">
                                 <h4 class="modal-title">Animación y dinamización del ocio y tiempo libre en colectivos específicos</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
                               </div> 
                               La primera unidad de trabajo recoge diferentes aspectos relacionados con conceptos básicos que serán necesarios para entender de manera completa la dimensión biopsicosocial de las personas y usuarios con los que trabajaréis en el futuro. <br>
                               Se incluyen también aspectos importantes relacionados con la psicología y las funciones cognitivas del ser humano, tanto básicas como superiores, así como la importancia de las emociones y sentimientos y de la inteligencia emocional en las personas.<br>
