@@ -236,13 +236,13 @@ body {
 </div>
 
 <!-- MODAL SUBNIVEL1 -->
-<div id="subnivel1" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+<div id="subnivel1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+    <div class="modal-content night-mode-available">
       <div class="modal-header">
         <h4 class="modal-title">SUBNIVEL 1</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-      </div> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
       Las personas estamos influenciadas por diferentes aspectos y/o dimensiones que conforman nuestra identidad BIOPSICOSOCIAL, estando nuestras necesidades vinculadas también con estas dimensiones y que, en relación con las personas en situación de dependencia, tendremos que dirigir ahí nuestra intervención para dar respuesta a las mismas.<br>
       Tenemos que tener en cuenta que cada persona tienes una forma de comportarse diferente influenciada por estas dimensiones y por diferentes estímulos que nos afectarán de diferentes maneras, estando relacionado con los diferentes tipos de conductas que pueden tener las personas y nuestros usuarios.<br>
       ¡Vamos a ver ahora cómo de claros han quedado estos conceptos!!!!<br>
@@ -253,13 +253,13 @@ body {
 </div>
 
 <!-- MODAL SUBNIVEL2 -->
-<div id="subnivel2" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+<div id="subnivel2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+    <div class="modal-content night-mode-available">
       <div class="modal-header">
         <h4 class="modal-title">SUBNIVEL 2</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-      </div> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
       Todas las personas tienen unas funciones cognitivas que les permiten y/o ayudan en su vida diaria, aunque en ocasiones no es así debido a alguna situación de diversidad funcional.<br>
       Las funciones cognitivas son básicas y superiores. Dentro de las básicas se encuentran, la atención, la percepción y la memoria que son las que ocupan los contenidos de este subnivel.<br>
       Estas funciones cognitivas se ven influenciadas no solamente por el Coeficiente Intelectual (CI) de la persona, sino también por las experiencias y/o vivencias por las que las personas atraviesan a lo largo de su vida, puesto que son funciones que evolucionan y se transforman de manera continua, adaptándose al entorno.<br>
@@ -270,13 +270,13 @@ body {
 </div>
 
 <!-- MODAL SUBNIVEL3 -->
-<div id="subnivel3" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+<div id="subnivel3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+    <div class="modal-content night-mode-available">
       <div class="modal-header">
         <h4 class="modal-title">SUBNIVEL 3</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-      </div> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
       Además de las funciones cognitivas básicas existentes otras funciones cognitivas que se consideran superiores debido a los procesos cognitivos que se activan o se ponen en funcionamiento cuando las usamos. Estas son el pensamiento, el razonamiento y el lenguaje. <br>
       Estas funciones cognitivas nos permiten comunicarnos, solucionar las diferentes situaciones que se nos presentar, expresar los que sentimos y queremos, desarrollar nuestra creatividad y, en definitiva, desarrollarnos de una manera más profunda.<br>
        ¡¡Vamos a comprobar si estos conceptos los hemos interiorizado!!!<br>
@@ -287,13 +287,13 @@ body {
 </div>
 
 <!-- MODAL SUBNIVEL4 -->
-<div id="subnivel4" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+<div id="subnivel4" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+    <div class="modal-content night-mode-available">
       <div class="modal-header">
         <h4 class="modal-title">SUBNIVEL 4</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-      </div> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
       Además de todo lo que hemos visto en los subniveles anteriores, hay varios aspectos que también son importantes de cara a conocer la dimensión BIOPSICOSOCIAL de las personas.  Estos contenidos son las emociones y la personalidad.<br>
       Las emociones marcan nuestras conductas y vienen dirigidas por nuestros pensamientos, por lo que es de vital importancia que aprendamos a conocer, identificar y gestionar adecuadamente nuestras emociones, pero también que identifiquemos las de los demás.<br>
       Cada persona tiene una forma concreta y específica de ser, de pensar, de actuar… esto conforma su PERSONALIDAD. Una personalidad que se puede ir reajustando a lo largo de la vida  las diferentes situaciones y/o experiencias vitales con las que se puedan encontrar.<br>
@@ -305,13 +305,13 @@ body {
 </div>
 
 <!-- MODAL SUBNIVEL5 -->
-<div id="subnivel5" class="modal fade bd-example-modal-lg night-mode-available" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+<div id="subnivel5" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+    <div class="modal-content night-mode-available">
       <div class="modal-header">
         <h4 class="modal-title">SUBNIVEL 5</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-      </div> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
       Una vez vistos todos los contenidos de la primera unidad de trabajo, vamos a comprobar los mismos aplicados a una situación práctica.<br>
       Para ello, se te plantea un caso práctico relacionado con dichos contenidos teóricos y se te formulará una serie de preguntas al respecto con la finalidad de relacionar los contenidos teóricos con o en la situación práctica.<br>
       La mayor parte del camino ya la has realizado. Ahora sólo queda el último paso.<br>

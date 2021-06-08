@@ -133,7 +133,9 @@ body {
                     </span></div>
                 </div>
                 <h6>Las personas estamos influenciadas por diferentes aspectos y/o dimensiones que conforman nuestra identidad biopsicosocial.</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>¡Vamos allá!</span>
+                <div class="d-flex justify-content-between install mt-3">
+                <!-- CONTENIDO -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subnivel1">Leer más</button>
                   <a href="../../views/tests/tests_subniveles_nivel3/test1"><span class="text-primary">Realizar Test&nbsp;<i class="fa fa-angle-right"></i></span></a>
                 </div>
             </div>
@@ -149,7 +151,9 @@ body {
                     </span></div>
                 </div>
                 <h6>Todas las personas tienen unas funciones cognitivas que les permiten y/o ayudan en su vida diaria, aunque en ocasiones no es así.</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>¡Empezemos!!</span>
+                <div class="d-flex justify-content-between install mt-3">
+                <!-- CONTENIDO -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subnivel2">Leer más</button>
                   <a href="../../views/tests/tests_subniveles_nivel3/test2"><span class="text-primary">Realizar Test&nbsp;<i class="fa fa-angle-right"></i></span></div></a>
             </div>
         </div>
@@ -165,7 +169,9 @@ body {
                     </span></div>
                 </div>
                 <h6>Además de las funciones cognitivas básicas existentes otras funciones cognitivas que se consideran superiores debido a los procesos cognitivos.</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>¿Preparado para comprobarlo?</span>
+                <div class="d-flex justify-content-between install mt-3">
+                <!-- CONTENIDO -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subnivel3">Leer más</button>
                   <a href="../../views/tests/tests_subniveles_nivel3/test3"><span class="text-primary">Realizar Test&nbsp;<i class="fa fa-angle-right"></i></span></div></a>
             </div>
         </div>
@@ -182,7 +188,9 @@ body {
                       </span></div>
                 </div>
                 <h6>Además de todo lo que hemos visto en los subniveles anteriores, hay varios aspectos que también son importantes de cara a conocer la dimensión biopsicosocial.</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>¿Te atreves?</span>
+                <div class="d-flex justify-content-between install mt-3">
+                <!-- CONTENIDO -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subnivel4">Leer más</button>
                   <a href="../../views/tests/tests_subniveles_nivel3/test4"><span class="text-primary">Realizar Test&nbsp;<i class="fa fa-angle-right"></i></span></div></a>
             </div>
         </div>
@@ -200,7 +208,9 @@ body {
                     </span></div>
                 </div>
                 <h6>Una vez vistos todos los contenidos de la primera unidad de trabajo, vamos a comprobar los mismos aplicados a una situación práctica.</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>¿Conoces tus limites?</span>
+                <div class="d-flex justify-content-between install mt-3">
+                <!-- CONTENIDO -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subnivel5">Leer más</button>
                   <a href="../../views/tests/tests_subniveles_nivel3/test5"><span class="text-primary">Realizar Test&nbsp;<i class="fa fa-angle-right"></i></span></div></a>
             </div>
         </div>
@@ -223,6 +233,82 @@ body {
             </div>
         </div>
     </div>
+</div>
+
+<!-- MODAL SUBNIVEL1 -->
+<div id="subnivel1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content night-mode-available">
+      <div class="modal-header">
+        <h4 class="modal-title">SUBNIVEL 1</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
+      Cada persona tiene una forma diferente de aprender en la cual se encuentra más cómodo o cómoda en sus aprendizajes. Esto puede estar influenciada por las diferentes inteligencias que poseemos y por diferentes aspectos que pueden afectar a nuestra motivación y, por lo tanto, a la capacidad para aprender más y mejor.<br>
+      Es importante no juzgar y adaptarnos a las diferentes formas de aprender que tengan nuestros usuarios, de esa manera podemos motivarles y facilitar sus procesos, consiguiendo así mejores resultado.  ¡Vamos a ver ahora cómo te ha resultado de motivante este contenido!!!!<br>
+      ¡Adelante!
+    </div>
+  </div>
+</div>
+
+<!-- MODAL SUBNIVEL2 -->
+<div id="subnivel2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content night-mode-available">
+      <div class="modal-header">
+        <h4 class="modal-title">SUBNIVEL 2</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
+      Son muchas las teorías y/o corrientes que han intentado explicar a lo largo de la historia el proceso de aprendizaje de los seres humanos. Estas corrientes hacían referencia al medio, a la herencia o una mezcla de ambas como principales factores que podían favorecer o dificultar dicho aprendizaje.<br>
+      Vamos a ver algunas de las principales y que todavía siguen vigentes y se aplican en dichos procesos, ¿empezamos?
+    </div>
+  </div>
+</div>
+
+<!-- MODAL SUBNIVEL3 -->
+<div id="subnivel3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content night-mode-available">
+      <div class="modal-header">
+        <h4 class="modal-title">SUBNIVEL 3</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
+      Cada persona tiene una forma y un ritmo concreto de aprendizaje que hay que tener en cuenta. Eso no es diferente en las personas  con diversidad funcional o con discapacidad con las que trabajaremos en el futuro.<br>
+      Por eso es necesario conocer algunos de los aspectos de cada colectivo que pueden afectar al nivel de motivación y a las posibilidades de aprendizaje de estas personas. En concreto con las personas mayores y personas con diversidad funcional intelectual.<br>
+      Vamos a ver si tenemos claros estos contenidos. ¿Estás listo o lista para comprobarlo??
+    </div>
+  </div>
+</div>
+
+<!-- MODAL SUBNIVEL4 -->
+<div id="subnivel4" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content night-mode-available">
+      <div class="modal-header">
+        <h4 class="modal-title">SUBNIVEL 4</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
+      Cada persona tiene una forma y un ritmo concreto de aprendizaje que hay que tener en cuenta. Eso no es diferente en las personas con diversidad funcional o con discapacidad con las que trabajaremos en el futuro.<br>
+      Por eso es necesario conocer algunos de los aspectos de cada colectivo que pueden afectar al nivel de motivación y a las posibilidades de aprendizaje de estas personas. En concreto con las personas con enfermedad mental, con demencias, con diversidad funcional física y sensorial y personas con enfermedad.<br>
+      ¡Te invito a comprobar lo claros que están estos contenidos!!
+    </div>
+  </div>
+</div>
+
+<!-- MODAL SUBNIVEL5 -->
+<div id="subnivel5" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> 
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content night-mode-available">
+      <div class="modal-header">
+        <h4 class="modal-title">SUBNIVEL 5</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="night-mode-available" aria-hidden="true">×</span></button>
+      </div> <br>
+      Una vez vistos todos los contenidos de la tercera unidad de trabajo, vamos a comprobar los mismos aplicados a una situación práctica.<br>
+     	Para ello, se te plantea un caso práctico relacionado con dichos contenidos teóricos y se te formulará una serie de preguntas al respecto con la finalidad de relacionar los contenidos teóricos con o en la situación práctica. <br>
+       La mayor parte del camino ya la has realizado. Ahora sólo queda el último paso.<br>
+       ¿Preparado/a para darlo?<br>
+       ¡Vamos allá!
+    </div>
+  </div>
 </div>
 
 <script src="../../js/nightmode.js" type='text/javascript'></script>
