@@ -1,4 +1,4 @@
-1. Añadir el resto de niveles -> Lucas (07/06 - Tema 3)
+✔ 1. Añadir el resto de niveles -> Lucas (07/06 - Tema 3)
 2. Gestión de temarios (Añadir tabla de temas) -> Pedro+Javi 
 3. Links con el bucle (tanto desplegable como menú principal) -> Javi (07/06)
 4. Gestionar niveles y subniveles -> Javi (07/06)
