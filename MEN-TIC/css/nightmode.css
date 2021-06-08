@@ -26,9 +26,14 @@ hr.night
 {
 	background-color: white;
 }
-.bd-example-modal-lg.night
+
+.modal-content.night
 {
-	color: black;
+	background-color: rgb(11, 15, 73);
+}
+span.night
+{
+	color: white;
 }
 
 /* CSS NightMode Hexágonos (Temario) */
