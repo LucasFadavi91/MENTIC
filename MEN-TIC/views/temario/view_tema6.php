@@ -1,5 +1,5 @@
 <?php 
-
+/*
   session_start();
 
 	if (isset($_SESSION) && isset($_SESSION["id_user"]) === false) {
@@ -8,9 +8,8 @@
     header("location: ../controllers/controller_register_login.php");
     exit;
 		
-	}
+	}*/
 ?>
-
 <!doctype html>
 <html>
 <head>
