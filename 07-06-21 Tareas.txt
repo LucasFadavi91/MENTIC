@@ -1,4 +1,4 @@
-1. Añadir el resto de niveles -> Lucas Pedro Javi (Tema 4 (si sobra tiempo tema 5, tema 6))
+1. Añadir el resto de niveles -> Lucas Pedro Javi ( ✔ Tema 4 (si sobra tiempo tema 5, tema 6))
 2. Gestionar niveles + ✔ warning -> Javi Lucas Pedro
 3. Gestión de temarios (Añadir tabla de temas) -> Pedro+Javi 
 4. Fixear registro/login Javi Lucas
