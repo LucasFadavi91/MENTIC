@@ -26,7 +26,7 @@ CREATE TABLE levels (
     id_level VARCHAR(10) NOT NULL,
     name_level VARCHAR(100) NOT NULL,
 	id_modulo VARCHAR(10) NOT NULL,
-    estado VARCHAR(1) NULL
+    estado VARCHAR(1) NULL,
 	PRIMARY KEY (id_level)
       
 );
