@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>MENTIC - Test3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="icon" href="../../../../img/favicon-16x16.png" type="image/png" sizes="16x16">
+
+</head>
+
+<body>
+    <div class="start_btn"><button>Comenzar</button></div>
+    <div class="info_box">
+        <div class="info_title">
+            <span>Reglas de la prueba</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. Tienes <span>30 segundos </span> para cada pregunta</div>
+            <div class="info">2. No puedes cambiar tu respuesta seleccionada</div>
+            <div class="info">3. Si el tiempo se agota, la pregunta se dará por incorrecta</div>
+            <div class="info">4. Es necesario terminar el test una vez empezado</div>
+            <div class="info">5. Conseguirás un punto por cada respuesta correcta</div>
+            <div class="info">6. No olvides pulsar en "Subir puntuación" al final del test</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Salir del test</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title"> SUBNIVEL 3</div>
+            <div class="timer">
+                <div class="time_text">
+                    Tiempo: 
+                </div>
+                <div class="timer_sec">
+                    30
+                </div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>A) Aqui va una de las opciones</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>B) Aqui va una de las opciones</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>C) Aqui va una de las opciones</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>D) Aqui va una de las opciones</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+
+            </div>
+            <button class="next_btn">Siguiente</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complexte_text"> ¡Has finalizado la prueba! </div>
+        <div class="score_text">
+            
+        </div>
+        <div class="buttons">
+            <form action="../../../../controllers/controllers_subniveles_nivel4/controller_modulo1_up_nivel4_subnivel3.php" method="post" name="puntos">
+                <button class="restart" id="restart" name="restart">Subir puntuación</button> <!-- Este botón le vamos a poner en vez de repetir el test, que sea un boton que envie la puntuacion a la base de datos-->
+            </form>
+            <button class="quit">Salir</button>
+        </div>
+    </div>
+</body>
+<script src="question.js"></script>
+<script src="script.js"></script>
+
+</html>
