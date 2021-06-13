@@ -16,3 +16,4 @@
 	- Gestión de temas (no estaba en la memoria)
 	- TESTS
 	- INSERT y UPDATE de puntos
+	
