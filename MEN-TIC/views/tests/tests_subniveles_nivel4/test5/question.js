@@ -65,7 +65,7 @@ let questions = [{
     {
         numb: 9,
         question: "Elige la opción correcta: “Francisco responde mal a un compañero y Claudia la verlo le responde igual de mal y le ridiculiza delante del resto de compañeros para que deje de hacer eso”: ",
-        answer: "El CI puede influir, pero también hay otros factores que determinarán la capacidad de aprendizaje de Antonio.",
+        answer: "Claudia no conseguirá que Francisco elimine esa conducta pues ha utilizado una estrategia inadecuada.",
         options: ['Claudia conseguirá lo que se pretende pues está utilizando el castigo.', 'Claudia conseguirá que nadie en el centro haga eso nunca más.'
         , 'Claudia no conseguirá que Francisco elimine esa conducta pues ha utilizado una estrategia inadecuada.',
          'Todas las opciones son incorrectas.']
