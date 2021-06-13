@@ -1,0 +1,18 @@
+-------------- CRONOLOGÍA -------------------
+
+1. Lucas:
+	- Registro / Login
+	- Select
+	- 
+
+2. Pedro:
+	- Navbar
+	- Modo oscuro
+	- Responsive (Landing Page responsive también)
+	- Temarios
+
+3. Javi:
+	- Base de Datos
+	- Gestión de temas (no estaba en la memoria)
+	- TESTS
+	- INSERT y UPDATE de puntos
