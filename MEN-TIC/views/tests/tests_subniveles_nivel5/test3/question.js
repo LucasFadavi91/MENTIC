@@ -30,7 +30,7 @@ let questions = [{
     {
         numb: 5,
         question: "Los programas  terapéuticos de Entrenamiento Cognitivo están diseñados para: ",
-        answer: "Todas las respuestas anteriores son correctas.",
+        answer: "Están diseñados principalmente para las personas con demencias.",
         options: ['Están diseñados principalmente para las personas con demencias.', 'Pero no se recomienda utilizar en geriátricos.', 'No se e pueden utilizar en centros con cualquier otro colectivo con déficit en estos aspectos.',
             'Todas las respuestas anteriores son correctas.'
         ]
