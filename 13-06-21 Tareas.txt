@@ -1,7 +1,8 @@
-1. Añadir niveles 5 y 6
+✔ 1. Añadir niveles 5 y 6
 ✔ 2. Gestionar niveles +  warning
 ✔ 3. Gestión de temarios 
 4. Fixear registro/login Javi Lucas
+5. rutas controllers.
 
 
 
